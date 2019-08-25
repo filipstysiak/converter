@@ -30,7 +30,7 @@ This simple app is created with Flask framework. It has only one point of entry 
 app simple it adds it's only method via @app.route annotation.
 
 The method validates the POST request body (a JSON object) and then uses an external API to retrieve the list of
-currency rates. The API is available [HERE](https://exchangeratesapi.io/).
+currency rates. The API is available [HERE](https://exchangeratesapi.io/). The list of valid currency code was made by asking this API for the latest rates and getting the list of keys.
 
 The multiplication of the desired rate of exchange with the given value is done with the help of `money` package
 (the data type used is Decimal).
